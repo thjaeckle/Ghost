@@ -1,17 +1,13 @@
-//var KnexMigrator = require('knex-migrator');
-//var knexMigrator = new KnexMigrator({
-//	    knexMigratorFilePath: __dirname
-//});
-
-//knexMigrator.init();
-// knexMigrator.migrate();
-
 var KnexMigrator = require('knex-migrator');
 var knexMigrator = new KnexMigrator({
-    knexMigratorFilePath: __dirname
+	    knexMigratorFilePath: __dirname
 });
 
-// check your database health
+knexMigrator.init();
+// knexMigrator.migrate();
+
+// check your database health 
+/*
 knexMigrator.isDatabaseOK()
   .then(function() {
      // database is OK
@@ -25,4 +21,4 @@ knexMigrator.isDatabaseOK()
      // database is not migrated?
      knexMigrator.migrate();
   });
-
+*/
